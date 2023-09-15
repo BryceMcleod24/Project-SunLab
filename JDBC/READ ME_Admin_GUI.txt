@@ -1,0 +1,65 @@
+This Java code represents an administrative control panel GUI application for managing user data and access records in a hypothetical system. Below is a detailed description of the code, including its core methods and functionality:
+
+### Admin_GUI Class
+- `Admin_GUI` is a class that extends the `JFrame` class, representing the main administrative control panel GUI.
+- It provides a user interface for administrators to access and manage user data and access records.
+
+#### Constructor:
+- The constructor initializes the GUI window with a title, dimensions, and layout settings.
+- It creates a panel with components for entering an admin ID and buttons for accessing user data and access records.
+
+#### validateAdminId Method:
+- `validateAdminId` is a method to check whether an input string matches the format of a valid admin ID.
+- It uses a regular expression (`\\d{9}`) to verify that the ID consists of 9 digits.
+
+#### isAdmin Method:
+- `isAdmin` checks if a given ID belongs to an admin user by querying a database.
+- It connects to the database, executes a query to retrieve the user type, and checks if it equals "admin."
+
+### User Data Viewer Methods
+- `displayUsersTable` and related methods are responsible for displaying and managing the user data viewer GUI.
+
+#### displayUsersTable Method:
+- `displayUsersTable` sets up the user data viewer GUI when the "User Data" button is clicked.
+- It fetches user data from a database, creates a table to display it, and adds filter options.
+
+#### createUsrTableFrame Method:
+- `createUsrTableFrame` creates a JFrame to display the user data table.
+- It sets up the table with column names, filters, and a custom button column for each user.
+
+#### applyFilter Method:
+- `applyFilter` filters the user data table based on the selected filter option (e.g., "All," "Admin," "Student," "Staff").
+
+#### filterAccessRecordsBySearchText Method:
+- `filterAccessRecordsBySearchText` allows users to search for records based on text input.
+
+#### fetchUsersData Method:
+- `fetchUsersData` retrieves user data from a database and returns it as a list of String arrays.
+
+#### updateUsersTableView Method:
+- `updateUsersTableView` updates the user data table with the latest data from the database.
+
+### Access Records Viewer Methods
+- Similar to user data viewer methods, there are methods for displaying and managing the access records viewer GUI.
+
+#### createAdmTableFrame Method:
+- `createAdmTableFrame` sets up the access records viewer GUI with filtering and search functionality.
+- It fetches access records data from the database and displays it in a table.
+
+#### displayAccessRecordsTable Method:
+- `displayAccessRecordsTable` initializes the access records viewer when the "Access Records" button is clicked.
+
+### Database Connection Methods
+- `connectToDatabase` establishes a connection to a MySQL database.
+
+### Data Fetching Methods
+- `fetchUsersData` and `fetchAccessData` retrieve user data and access records data from the database.
+
+### User Status Toggling
+- The code includes functionality to toggle user statuses between "Active" and "Deactive" through buttons in the user data table.
+- The `ButtonRenderer` and `ButtonEditor` classes handle the rendering and behavior of these buttons.
+
+### Main Method
+- The `main` method initializes the Admin_GUI class and makes it visible when the program is run.
+
+This Java code creates a comprehensive administrative control panel with user and access records management features. It connects to a MySQL database to fetch and display data and allows administrators to interact with the data through a user-friendly GUI.

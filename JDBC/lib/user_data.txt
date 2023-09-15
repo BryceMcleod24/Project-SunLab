@@ -1,0 +1,56 @@
+|John Doe         | 123456789 | admin   | Active   |
+| Alice Johnson   | 456789123 | student | Active   |
+| John Wick       | 936274557 | staff   | Active   |
+| Bob Brown       | 789123456 | admin   | Deactive |
+| Bryce James     | 198936748 | student | Deactive |
+| Jane Smith      | 987654321 | staff   | Deactive |
+| Michael Jackson | 567890123 | admin   | Active   |
+| Emily Davis     | 234567890 | student | Active   |
+| Sarah White     | 345678901 | staff   | Active   |
+| William Lee     | 456789012 | admin   | Deactive |
+| Olivia Adams    | 678901234 | student | Deactive |
+| James Miller    | 789012345 | staff   | Deactive |
+| Sophia Taylor   | 890123456 | admin   | Active   |
+| Benjamin Brown  | 901234567 | student | Active   |
+| Ava Wilson      | 123401234 | staff   | Active   |
+| Daniel Clark    | 234512345 | admin   | Deactive |
+| Mia Moore       | 345623456 | student | Deactive |
+| Ethan Harris    | 456734567 | staff   | Deactive |
+| Harper Lewis    | 567845678 | admin   | Active   |
+| Matthew Hall    | 678956789 | student | Active   |
+| Amelia King     | 789067890 | staff   | Active   |
+| Charlotte Hill  | 890178901 | admin   | Deactive |
+| Elijah White    | 901289012 | student | Deactive |
+| Grace Turner    | 123490123 | staff   | Deactive |
+| Oliver Scott    | 234501234 | admin   | Active   |
+| Scarlett Young  | 345612345 | student | Active   |
+
+CODE TO ENTER DATA VIA TERMINAL
+
+INSERT INTO users (name, id, role, status) VALUES
+('John Doe', '123456789', 'admin', 'Active'),
+('Alice Johnson', '456789123', 'student', 'Active'),
+('John Wick', '936274557', 'staff', 'Active'),
+('Bob Brown', '789123456', 'admin', 'Deactive'),
+('Bryce James', '198936748', 'student', 'Deactive'),
+('Jane Smith', '987654321', 'staff', 'Deactive'),
+('Michael Jackson', '567890123', 'admin', 'Active'),
+('Emily Davis', '234567890', 'student', 'Active'),
+('Sarah White', '345678901', 'staff', 'Active'),
+('William Lee', '456789012', 'admin', 'Deactive'),
+('Olivia Adams', '678901234', 'student', 'Deactive'),
+('James Miller', '789012345', 'staff', 'Deactive'),
+('Sophia Taylor', '890123456', 'admin', 'Active'),
+('Benjamin Brown', '901234567', 'student', 'Active'),
+('Ava Wilson', '123401234', 'staff', 'Active'),
+('Daniel Clark', '234512345', 'admin', 'Deactive'),
+('Mia Moore', '345623456', 'student', 'Deactive'),
+('Ethan Harris', '456734567', 'staff', 'Deactive'),
+('Harper Lewis', '567845678', 'admin', 'Active'),
+('Matthew Hall', '678956789', 'student', 'Active'),
+('Amelia King', '789067890', 'staff', 'Active'),
+('Charlotte Hill', '890178901', 'admin', 'Deactive'),
+('Elijah White', '901289012', 'student', 'Deactive'),
+('Grace Turner', '123490123', 'staff', 'Deactive'),
+('Oliver Scott', '234501234', 'admin', 'Active'),
+('Scarlett Young', '345612345', 'student', 'Active');

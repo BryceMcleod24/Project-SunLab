@@ -1,0 +1,37 @@
+This Java program, named `LoginGUI`, is a Swing-based graphical user interface (GUI) application for a login system. The program provides a login screen and various functionalities associated with user authentication and access logging.
+
+Here's a basic description of the code and its core methods:
+
+1. **Import Statements**: The program starts with importing necessary Java and Swing classes for GUI creation, database connectivity, and handling user actions.
+
+2. **Class Declaration**: `LoginGUI` is a class that extends `JFrame`, which means it represents the main window of the application.
+
+3. **GUI Initialization**:
+   - The constructor of `LoginGUI` initializes the GUI components, including labels, text fields, buttons, and their properties such as size, font, and background color.
+   - It sets up action listeners for buttons like "Swipe" and "Admin Login" to respond to user actions.
+
+4. **Opening the Admin Login**: The `OpenAdminLogIn` method opens an admin login window when the "Admin Login" button is clicked.
+
+5. **Opening In/Out Options**: The `openInOutGUI` method opens a new window for users to perform actions related to entering or exiting a location. It takes user input for ID, action (enter/exit), and logs access time in the database.
+
+6. **Database Connection**: The `connectToDatabase` method establishes a connection to the MySQL database using JDBC (Java Database Connectivity).
+
+7. **Database Operations**:
+   - `getUserType`: Retrieves the user type based on the provided ID from the database.
+   - `getAction`: Determines the action (enter/exit) based on the selected radio button.
+   - `getStatus`: Retrieves the status of a user (active/deactive) based on the provided ID.
+   - `getUserNameById`: Retrieves the user's name based on the provided ID.
+   - `validateID`: Validates if an ID matches the expected format (9-digit number).
+   - `updateTimestampInDatabase`: Inserts access records for entering users in the database.
+   - `updateTimestampOutDatabase`: Updates access records for exiting users in the database.
+
+8. **Main Method**: The `main` method is the entry point of the application. It creates an instance of `LoginGUI` and makes it visible.
+
+**How the Code Runs**:
+- When you run the program, it opens a login screen with buttons for swiping, admin login, and exit.
+- Clicking "Swipe" opens a window for entering an ID and selecting whether the user is entering or exiting.
+- Clicking "Admin Login" opens an admin login window.
+- The program connects to a MySQL database to retrieve user information and log access times.
+- It validates user inputs, checks the user's status, and logs the access time based on the action (enter/exit).
+
+This code provides a basic framework for a login system with user access logging, and it can be further extended and customized to suit specific requirements.
